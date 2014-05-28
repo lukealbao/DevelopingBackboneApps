@@ -1,0 +1,60 @@
+/* ===== screen.css ===== */
+
+body {
+	background-color: #eee;
+}
+#books {
+	width: 960px;
+}
+.book-container {
+	outline: 1px solid #aab;
+	width: 350px;
+	height: 130px;
+	background-color: #fff;
+	float: left;
+	margin: 5px;
+}
+.book-container img {
+	float: left;
+	margin: 10px;
+}
+.book-container ul {
+	list-style-type: none;
+	margin-bottom: 0;
+}
+.book-container button {
+	float: right;
+	margin: 10px;
+}
+#add-book label {
+	width: 100px;
+	margin-right: 10px;
+	text-align: right;
+	line-height: 25px;
+}
+#add-book label, #add-book input {
+	display: block;
+	margin: 10px;
+	float: left;
+}
+#add-book label[for="title"], #add-book label[for="release-date"] {
+	clear: both;
+}
+#add-book button {
+	display: block;
+	margin: 5px 20px 10px 10px;
+	float: right;
+	clear: both;
+}
+#add-book div {
+	width: 720px;
+}
+#add-book div:after {
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+}

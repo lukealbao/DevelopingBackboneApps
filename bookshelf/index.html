@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone Library</title>
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+	<div id="books" class="container">
+		<form id="add-book" action="#">
+			<div>
+				<label for="cover-image">Cover Image: </label><input id="cover-image" type="file" />
+				<label for="title">Title: </label><input id="title" type="text" />
+				<label for="author">Author: </label><input id="author" type="text" />
+				<label for="release-date">Release Date: </label><input id="release-date" type="text" />
+				<label for="keywords">Keywords: </label><input id="keywords" type="text" />
+				<button id="add">Add</button>
+			</div>
+		</form>
+	</div>
+	<script id="book-template" type="text/template">
+		<img src="<%= coverImage %>" />
+		<ul>
+			<li><%= title %></li>
+			<li><%= author %></li>
+			<li><%= releaseDate %></li>
+			<li><%= keywords %></li>
+		</ul>
+		<button class="delete">Delete</button>
+	</script>
+	<script src="js/lib/jquery-2.1.0.js"></script>
+	<script src="js/lib/underscore.js"></script>
+	<script src="js/lib/backbone.js"></script>
+	<script src="js/lib/backbone.localStorage.js"></script>
+	<script src="js/models/book.js"></script>
+	<script src="js/collections/library.js"></script>
+	<script src="js/views/library.js"></script>
+	<script src="js/views/book.js"></script>
+	<script src="js/routers/router.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
